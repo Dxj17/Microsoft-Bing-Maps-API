@@ -1,0 +1,23 @@
+{
+  "name": "microsoft-bing-maps-api",
+  "version": "1.2.0",
+  "description": "Having fun with microsoft bing maps sdk ",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinkid/Microsoft-Bing-Maps-API.git"
+  },
+  "keywords": [
+    "Bing",
+    "Maps"
+  ],
+  "author": "bigkevzs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevinkid/Microsoft-Bing-Maps-API/issues"
+  },
+  "homepage": "https://github.com/kevinkid/Microsoft-Bing-Maps-API#readme"
+}
