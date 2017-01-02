@@ -43,6 +43,9 @@ Traffic services provides traffic information about for a geographycal area.
 Its easy to start Leveraging Microsoft Bing Maps API and start using in your apps or business and other solutions you are working on, all you need to do is get a [key](https://www.bingmapsportal.com/Application) with __authenticates__ your application to the microsoft servers. If you have an **Azure** subscription you can add the cloud service from there and use it in your application see my [post](http://devscenter.com/article/to/azure/bing/cloud/service) . Manage your keys from the bingmapsportal .
 
 
+### Api usage
+
+
 
 
 

@@ -1,5 +1,6 @@
 var express = require('express');
 var glob = require('glob');
+var path = require('path');
 
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -16,6 +17,7 @@ module.exports = function(app, config) {
   app.set('views', config.root + '/app/views');
   app.set('view engine', 'ejs');
 
+
   // app.use(favicon(config.root + '/public/img/favicon.ico'));
   app.use(logger('dev'));
   app.use(bodyParser.json());
@@ -25,6 +27,7 @@ module.exports = function(app, config) {
   app.use(cookieParser());
   app.use(compress());
   app.use(express.static(config.root + '/public'));
+  app.use(express.static(config.root + '/SDK'));
   app.use(methodOverride());
 
   var controllers = glob.sync(config.root + '/app/controllers/*.js');
