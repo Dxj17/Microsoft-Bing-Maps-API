@@ -16,7 +16,6 @@ Microsoft Bing Maps Api exposes an Rest Endpoint that gives back important map r
 4. Routing  
 5. Traffic   
 
-
 *__Location__*
 
 Location services provide location data based on an address, point or query. 
