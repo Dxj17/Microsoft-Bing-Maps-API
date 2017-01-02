@@ -56,8 +56,8 @@ function loadMap() {
         zoom: 15
     });
 
+    
     displayMapDetails(); /// @todo: put at the bottom for consistency 
-
 
 
     /// Setting Map Options 
@@ -84,9 +84,8 @@ function loadMap() {
      */
     pushpin = new Microsoft.Maps.Pushpin(map.getCenter() , {
         icon: "http://localhost:3000/img/locationPushpin.png",
-        anchor: new Microsoft.Maps.Point(25, 25) /// @todo: replace prop value with the geolocation coords
+        anchor:   new Microsoft.Maps.Point(map.getCenter().longitude,map.getCenter().latitude ) /// @todo: replace prop value with the geolocation coords
     });
-    
 
 
 
@@ -95,10 +94,10 @@ function loadMap() {
      * @param{Object} - Module namespace 
      * @param{Function} - Callback function 
      */
-    Microsoft.Maps.Map.loadModules('Microsoft.Maps.Directions', function(){
+    Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function(){
 
         /// Instanciate the directionmanager 
-        var directionMan  = new Microsoft.Direction.DirectionsManager(map);
+        var directionMan  = new Microsoft.Maps.Directions.DirectionsManager(map);
         /// Set and Render the input directions controls 
         directionMan.setRenderOptions({itineraryContainer: directionsManager});
         directionMan.showInputPanel("directionsInputPanel");
