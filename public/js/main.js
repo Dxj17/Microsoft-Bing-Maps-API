@@ -6,30 +6,33 @@ Author: bigkevzs
 var map;
 var view = document.getElementsByClassName("details");
 
+
+function displayMapDetails(){
+
+    var Detlist = document.createElement("ul");
+    
+    var domString = "\
+        <li><b>Map Center:</b> "+ map.getCenter() +"</li><br/>\
+        <li><b>Map Bounds: </b> "+ map.getBounds() +"</li><br/>\
+        <li><b> </b> "+ +"</li><br/>\
+        <li><b> </b> "+ +"</li><br/>\
+        <li><b> </b> "+ +"</li><br/>\
+        ";
+    Detlist.innerHTML = domString;
+    view.appendChild(Detlist,view.lastChild);
+
+}
+
+
 function loadMapScenario() {
     map = new Microsoft.Maps.Map(document.getElementById('Map'), {
         credentials: 'AuZTRcdNv_8_rFqQgk8uJfkPINqMSnpm44NcDbqolb-UrFaOOFPMpuUknYeA0crb',
         mapTypeId: Microsoft.Maps.MapTypeId.road,
         zoom: 10
     });
+    displayMapDetails();
 }
 
-
-function displayMapDetails(){
-var Detlist = document.createElement("ul");
-var domString = "\
-       <b>Map Center:</b><li>"+ map.getCenter() +"</li><br/>\
-       <b>Map Bounds: </b><li>"+ map.getBounds() +"</li><br/>\
-       <b> </b><li>"+ +"</li><br/>\
-       <b> </b><li>"+ +"</li><br/>\
-       <b> </b><li>"+ +"</li><br/>\
-    ";
-Detlist.innerHTML = domString;
-view.appendChild(Detlist,view.lastChild);
-
-}
-
-onload = displayMapDetails();
 
 
 
