@@ -11,9 +11,6 @@ var map,
 
 
 
-
-
-
 /**
  * @type {function} - display location data through dom injection
  */
@@ -84,7 +81,9 @@ function loadMap() {
      */
     pushpin = new Microsoft.Maps.Pushpin(map.getCenter() , {
         icon: "http://localhost:3000/img/locationPushpin.png",
-        anchor:   new Microsoft.Maps.Point(map.getCenter().longitude,map.getCenter().latitude ) /// @todo: replace prop value with the geolocation coords
+        width:10,
+        height:10,
+        anchor:   new Microsoft.Maps.Point(12,25) /// @todo: replace prop value with the geolocation coords
     });
 
 
