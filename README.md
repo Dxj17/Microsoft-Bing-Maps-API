@@ -48,15 +48,56 @@ Its easy to start Leveraging Microsoft Bing Maps API and start using in your app
 
 Bing Maps API can be used in alot of ways in this tiny code sample project i have used the API in different ways. 
 
+
+#### Rendering the Map 
+
 ![map smaple](public/img/staticmap-1.png)
 
+```javascript
+
+    /**
+     * @param{Object} - Dom object element 
+     * @param{Object} - Object option settions for the map
+     */
+    map = new Microsoft.Maps.Map(document.getElementById('Map'), {
+        credentials: 'asdfasdfasdfasdfasdfasdfasdfsadfasdf',
+        mapTypeId: Microsoft.Maps.MapTypeId.road,
+        zoom: 15
+    });
 
 
+```
 
 
+#### Bing Map Services 
+
+Bing maps provide a large namespaces with different modules that help use make use the API in a more efficient way. The API large and having all the modules loaded together with your Application would be too heavy.
 
 
+![Bing Maps Services](public/img/bingmapsServices.png)
 
+```javascript
+
+    /**
+     * @param{Object} - Module namespace 
+     * @param{Function} - Callback function 
+     */
+    Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function(){
+
+        /// Instanciate the directionmanager 
+        var directionMan  = new Microsoft.Maps.Directions.DirectionsManager(map);
+        /// Set and Render the input directions controls 
+        directionMan.setRenderOptions({itineraryContainer: directionsManager});
+        directionMan.showInputPanel("directionsInputPanel");
+        
+    });
+
+```
+
+This code sample is very basic but i might be updating it to something different than a code sample if you have any review, comments or get in touch on my [email](http://mailto://bigkevin2682@gmail.com) .
+
+
+__Thank you **@bigkevzs**__
 
 
 
