@@ -1,21 +1,25 @@
 <% include header %>
 
+<header>
   <h1><%-title %></h1>
   <p>Simple code for Microsoft Bing Maps API</p>
-  <p>
-  </p>
+</header> 
 
-  <aside class="map" style="float:right;">
-    <figure>
-      <div id='Map' style='width: 50vw; height: 100vh;'></div>
-      <figcaption class="details">
-      
-      </figcaption>
-    </figure>
-  </aside>
-  <aside class="address" style="float:left;">
-        <div id="directionsManager"></div>
-      <div id="directionsInputPanel"></div>
-  </aside>
+ <section class="demo">
+    <aside class="address" style="float:right;">
+          <div id="directionsManager"></div>
+        <div id="directionsInputPanel"></div>
+    </aside>
+    <aside class="map" style="float:left;">
+      <figure>
+        <div id='Map' style='width: 50vw; height: 100vh;'></div>
+        <figcaption class="details"></figcaption>
+      </figure>
+    </aside>
+ </section>
+
+<footer>
   <small><b>Thank you  <i>@bigkevzs</i></b></small>
+</footer>
+
 <% include footer %>
