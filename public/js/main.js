@@ -30,7 +30,7 @@ function displayMapDetails(){
  */
 function loadMap() {
 
-    
+
     /**
      * @param{Object} - Dom object element 
      * @param{Object} - Object option settions for the map
@@ -38,43 +38,11 @@ function loadMap() {
     map = new Microsoft.Maps.Map(document.getElementById('Map'), {
         credentials: 'AuZTRcdNv_8_rFqQgk8uJfkPINqMSnpm44NcDbqolb-UrFaOOFPMpuUknYeA0crb',
         mapTypeId: Microsoft.Maps.MapTypeId.road,
-        zoom: 10
+        zoom: 15
     });
     displayMapDetails();
-}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-onload = function(){
-    // @todo: only use for testing purpose requesting location onload is suspecious for the user. 
-    if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(function(){
-            console.log("Requesting location permissions ");
-        });
-    }
 }
