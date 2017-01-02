@@ -19,7 +19,7 @@ function displayMapDetails(){
         <li><b> </b> "+ +"</li><br/>\
         ";
     Detlist.innerHTML = domString;
-    view.appendChild(Detlist,view.lastChild);
+    view[0].appendChild(Detlist,view.lastChild);
 
 }
 
