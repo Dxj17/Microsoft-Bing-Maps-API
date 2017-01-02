@@ -1,6 +1,6 @@
 body,
 html {
-  padding: 50px;
+  padding: 5px 0px 20px 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 * {
@@ -8,6 +8,18 @@ html {
 }
 a {
   color: #00B7FF;
+}
+b {
+  color: gray;
+}
+ul {
+  list-style: non;
+}
+ul li {
+  font-size: small;
+}
+.details b {
+  color: black;
 }
 .map {
   float: left;
@@ -18,4 +30,7 @@ a {
 .address {
   float: right;
   padding: 0;
+}
+.map + small {
+  padding: 51px;
 }
