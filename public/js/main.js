@@ -48,7 +48,7 @@ function loadMap() {
      * @param{Object} - Object option settions for the map
      */
     map = new Microsoft.Maps.Map(document.getElementById('Map'), {
-        credentials: 'AuZTRcdNv_8_rFqQgk8uJfkPINqMSnpm44NcDbqolb-UrFaOOFPMpuUknYeA0crb',
+        credentials: 'blahblahblah',
         mapTypeId: Microsoft.Maps.MapTypeId.road,
         zoom: 15
     });
