@@ -2,7 +2,7 @@
 
 # Microsoft Bing APIs
 
-This document assumes you already know which services you want to use from the API if you don't go through the list [here](http://www.bing.com/api/maps/) . 
+This document assumes you already know which services you want to use from the API if you don't go through the list [here](https://msdn.microsoft.com/en-us/library/ff701713.aspx) . 
 
 ## Bing Maps Rest Services  
 
