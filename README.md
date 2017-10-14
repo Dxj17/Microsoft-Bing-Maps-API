@@ -94,7 +94,7 @@ Bing maps provide a large namespaces with different modules that help use make u
 
 ```
 
-This code sample is very basic but i might be updating it to something different than a code sample if you have any review, comments or get in touch on my [email](http://mailto://bigkevin2682@gmail.com) .
+This code sample is very basic but i might be updating it to something different than a code sample if you have any review, comments or get in touch on my [email](http://mailto:bigkevin2682@gmail.com) .
 
 
 __Thank you **@bigkevzs**__
